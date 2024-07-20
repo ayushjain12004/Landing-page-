@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title> Login</title>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-auth.js"></script>
+    <!--External JS file-->
+    <script src="scripts/main.js"></script>
+    <!--External CSS file-->
+    <link rel="stylesheet" href="styles/main.css">
+    <style>
+      .footer {
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <!--Login page site logo-->
+        <a href="home.html">
+          <img id="sitelogo-login" src="images/logo.jpg" alt="Home"></a>
+      <h1>Login Form</h1>
+       <div class="myForm">
+         <input type="text" placeholder="First name" id="myName">
+         <input type="last name" placeholder="Last name" id="myName">
+         <input type="number" min="1000000000" max="9999999999"   placeholder="Your number" id="myName">
+          <input type="email" placeholder="Email" id="myEmail">
+          <input type="password" placeholder="Password" id="myPassword">
+         
+          <!--Sign up and Sign In buttons-->
+          <button onclick="signUp()" id="signUp">Sign Up</button>
+          <button onclick="signIn()" id="signIn">Sign In</button>
+       </div>
+     </div>
+    <!--Footer-->
+      <div class="footer">
+      
+     </div>
+  </body>
+</html>

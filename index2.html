@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ayush Services</title>
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div id="search-container">
+        <input
+          type="search"
+          id="search-input"
+          placeholder="Search product name here.."
+        />
+        <button id="search">Search</button>
+      </div>
+      <div id="buttons">
+        <button class="button-value" onclick="filterProduct('all')">All</button>
+        <button class="button-value" onclick="filterProduct('Dehli')">
+          Dehli
+        </button>
+        <button class="button-value" onclick="filterProduct('Dehradun')">
+          Dehradun
+        </button>
+        <button class="button-value" onclick="filterProduct('Mumbai')">
+          Mumbai
+        </button>
+        <button class="button-value" onclick="filterProduct('Bangalore')">
+          Bangalore
+        </button>
+
+        <button class="button-value" onclick="filterProduct('Private')">
+          Private room
+        </button>
+        <button class="button-value" onclick="filterProduct('Double')">
+          Double Sharing
+        </button>
+        <button class="button-value" onclick="filterProduct('Triple')">
+          Triple  Sharing
+        </button>
+       
+      </div>
+      <div id="products"></div>
+    </div>
+    <!-- Script -->
+    <script src="script1.js"></script>
+  </body>
+</html>
